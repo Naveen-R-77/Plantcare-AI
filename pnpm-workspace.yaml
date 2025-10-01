@@ -1,5 +1,0 @@
-ignoredBuiltDependencies:
-  - '@mongodb-js/zstd'
-  - '@tailwindcss/oxide'
-  - kerberos
-  - mongodb-client-encryption
