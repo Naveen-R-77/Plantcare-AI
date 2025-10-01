@@ -1,82 +1,57 @@
-# Plant Disease Detection App
+# 🌱 PlantCare AI - Plant Disease Detection & Crop Advisory
 
-A comprehensive web application for AI-powered plant disease detection with multilingual support, chatbot assistance, and crop advisory features.
+AI-powered plant disease detection and crop advisory platform with multilingual support for farmers and gardeners worldwide.
 
 ## Features
 
-- 🔐 **User Authentication** - Secure login/signup with MongoDB
-- 📸 **Disease Detection** - AI-powered plant disease analysis from leaf images
-- 💬 **AI Chatbot** - Conversational AI for plant care advice
-- 🌾 **Crop Advisory** - Personalized recommendations based on soil and weather
-- 🌍 **Multilingual Support** - Tamil and English language support
-- 📊 **Data Storage** - Complete user history and analysis storage
+- **User Authentication** - Secure login/signup with MongoDB
+- **Disease Detection** - AI-powered plant disease analysis using Google Gemini
+- **AI Chatbot** - Conversational AI for plant care advice in multiple languages
+- **Crop Advisory** - Location-based recommendations with weather integration
+- **Multilingual Support** - English, Tamil, Hindi, Telugu, Kannada, Malayalam
+- **Contact System** - EmailJS integration for farmer support
+- **Analytics Dashboard** - User insights and detection history
+- **Mobile Optimized** - Responsive design with PWA support
+
+## Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Naveen-R-77/Plantcare-AI.git
+   cd Plantcare-AI
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Set up environment variables**
+   ```bash
+   cp env.example .env.local
+   # Edit .env.local with your API keys
+   ```
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+5. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
 
 ## Environment Variables
 
-Create a `.env.local` file in the root directory with the following variables:
+Create a `.env.local` file with the following variables:
 
-\`\`\`env
+```env
 # MongoDB Configuration
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/plant_disease_app?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/plantcare_ai
+
+# Google Gemini AI
+GEMINI_API_KEY=your_gemini_api_key_here
 
 # JWT Secret for Authentication
-JWT_SECRET=your-super-secret-jwt-key-here
+JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters
 
-# Optional: For development redirects
-NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL=http://localhost:3000/dashboard
-\`\`\`
-
-## MongoDB Setup
-
-1. Create a MongoDB Atlas account at https://www.mongodb.com/atlas
-2. Create a new cluster and database named `plant_disease_app`
-3. Get your connection string and add it to `MONGODB_URI`
-4. The app will automatically create the following collections:
-   - `users` - User accounts and profiles
-   - `disease_detections` - Plant disease analysis history
-   - `chat_messages` - Chatbot conversation history
-   - `soil_analyses` - Soil parameter data
-   - `crop_recommendations` - Crop advisory results
-
-## Required Dependencies
-
-The app uses the following key dependencies:
-
-\`\`\`json
-{
-  "mongodb": "^6.0.0",
-  "bcryptjs": "^2.4.3",
-  "jsonwebtoken": "^9.0.0"
-}
-\`\`\`
-
-## Getting Started
-
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Set up environment variables (see above)
-4. Run the development server: `npm run dev`
-5. Open http://localhost:3000
-
-## API Endpoints
-
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/disease-detection` - Save disease detection results
-- `GET /api/disease-detection` - Get user's detection history
-- `POST /api/chat` - Send chat message and get AI response
-- `GET /api/chat` - Get user's chat history
-
-## Architecture
-
-The app follows a modular architecture with:
-
-- **Frontend**: Next.js with TypeScript and Tailwind CSS
-- **Backend**: Next.js API routes with MongoDB
-- **Authentication**: JWT-based authentication
-- **Database**: MongoDB with proper schemas and indexes
-- **Internationalization**: Context-based language switching
-- **State Management**: React hooks and context
-\`\`\`
-
-```tsx file="" isHidden
+# Weather API (Optional)
+NEXT_PUBLIC_WEATHER_API_KEY=your_openweather_api_key
+```
