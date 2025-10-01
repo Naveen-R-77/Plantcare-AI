@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts for Indian languages */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@300;400;500;600;700&family=Noto+Sans+Malayalam:wght@300;400;500;600;700&family=Noto+Sans+Gujarati:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap');
+
+/* Font classes for different Indian languages */
+.font-devanagari {
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-tamil {
+  font-family: 'Noto Sans Tamil', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-telugu {
+  font-family: 'Noto Sans Telugu', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-kannada {
+  font-family: 'Noto Sans Kannada', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-malayalam {
+  font-family: 'Noto Sans Malayalam', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-gujarati {
+  font-family: 'Noto Sans Gujarati', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-bengali {
+  font-family: 'Noto Sans Bengali', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.font-punjabi {
+  font-family: 'Noto Sans Gurmukhi', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated theme for agricultural app with green primary colors */
+  --background: oklch(0.99 0.005 120);
+  --foreground: oklch(0.15 0.02 140);
+  --card: oklch(0.98 0.01 120);
+  --card-foreground: oklch(0.15 0.02 140);
+  --popover: oklch(0.98 0.01 120);
+  --popover-foreground: oklch(0.15 0.02 140);
+  --primary: oklch(0.45 0.15 140);
+  --primary-foreground: oklch(0.98 0.01 120);
+  --secondary: oklch(0.92 0.02 120);
+  --secondary-foreground: oklch(0.25 0.03 140);
+  --muted: oklch(0.94 0.02 120);
+  --muted-foreground: oklch(0.55 0.02 140);
+  --accent: oklch(0.35 0.12 160);
+  --accent-foreground: oklch(0.98 0.01 120);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.98 0.01 120);
+  --border: oklch(0.88 0.02 120);
+  --input: oklch(0.88 0.02 120);
+  --ring: oklch(0.45 0.15 140);
+  --chart-1: oklch(0.45 0.15 140);
+  --chart-2: oklch(0.35 0.12 160);
+  --chart-3: oklch(0.65 0.18 80);
+  --chart-4: oklch(0.55 0.2 25);
+  --chart-5: oklch(0.4 0.1 200);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.96 0.02 120);
+  --sidebar-foreground: oklch(0.15 0.02 140);
+  --sidebar-primary: oklch(0.45 0.15 140);
+  --sidebar-primary-foreground: oklch(0.98 0.01 120);
+  --sidebar-accent: oklch(0.92 0.02 120);
+  --sidebar-accent-foreground: oklch(0.25 0.03 140);
+  --sidebar-border: oklch(0.88 0.02 120);
+  --sidebar-ring: oklch(0.45 0.15 140);
+}
+
+.dark {
+  /* Dark theme with agricultural green accents */
+  --background: oklch(0.08 0.01 140);
+  --foreground: oklch(0.95 0.01 120);
+  --card: oklch(0.1 0.01 140);
+  --card-foreground: oklch(0.95 0.01 120);
+  --popover: oklch(0.1 0.01 140);
+  --popover-foreground: oklch(0.95 0.01 120);
+  --primary: oklch(0.65 0.18 140);
+  --primary-foreground: oklch(0.08 0.01 140);
+  --secondary: oklch(0.18 0.02 140);
+  --secondary-foreground: oklch(0.95 0.01 120);
+  --muted: oklch(0.15 0.02 140);
+  --muted-foreground: oklch(0.65 0.02 140);
+  --accent: oklch(0.55 0.15 160);
+  --accent-foreground: oklch(0.08 0.01 140);
+  --destructive: oklch(0.65 0.25 25);
+  --destructive-foreground: oklch(0.95 0.01 120);
+  --border: oklch(0.18 0.02 140);
+  --input: oklch(0.18 0.02 140);
+  --ring: oklch(0.65 0.18 140);
+  --chart-1: oklch(0.65 0.18 140);
+  --chart-2: oklch(0.55 0.15 160);
+  --chart-3: oklch(0.75 0.2 80);
+  --chart-4: oklch(0.65 0.25 25);
+  --chart-5: oklch(0.6 0.15 200);
+  --sidebar: oklch(0.12 0.01 140);
+  --sidebar-foreground: oklch(0.95 0.01 120);
+  --sidebar-primary: oklch(0.65 0.18 140);
+  --sidebar-primary-foreground: oklch(0.08 0.01 140);
+  --sidebar-accent: oklch(0.18 0.02 140);
+  --sidebar-accent-foreground: oklch(0.95 0.01 120);
+  --sidebar-border: oklch(0.18 0.02 140);
+  --sidebar-ring: oklch(0.65 0.18 140);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Ensure proper image containment */
+@layer components {
+  .image-container {
+    @apply max-w-full overflow-hidden rounded-lg;
+    height: 16rem !important;
+    max-height: 16rem !important;
+  }
+  
+  .image-container img,
+  .image-container video {
+    @apply w-full h-full object-cover;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 16rem !important;
+    object-fit: cover !important;
+  }
+  
+  /* Plant disease detection image specific styling */
+  .plant-image-container {
+    @apply relative w-full rounded-lg overflow-hidden;
+    height: 20rem;
+    max-height: 20rem;
+    max-width: 100%;
+    aspect-ratio: 4/3;
+    background-color: #f3f4f6;
+  }
+  
+  .plant-image-container img,
+  .plant-image-container video {
+    @apply w-full h-full;
+    object-fit: contain !important;
+    object-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 20rem !important;
+  }
+  
+  /* Ensure proper aspect ratio for mobile devices */
+  @media (max-width: 768px) {
+    .plant-image-container {
+      height: 16rem;
+      max-height: 16rem;
+    }
+    
+    .plant-image-container img,
+    .plant-image-container video {
+      max-height: 16rem !important;
+      object-fit: contain !important;
+    }
+  }
+  
+  /* Prevent any element from overflowing the viewport */
+  .page-container {
+    @apply max-w-full overflow-x-hidden;
+  }
+}
