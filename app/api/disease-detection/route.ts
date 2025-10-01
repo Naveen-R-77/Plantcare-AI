@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
+export const runtime = 'nodejs'
 import { getDatabase } from "@/lib/mongodb"
 import type { DiseaseDetection } from "@/lib/models"
 import { ObjectId } from "mongodb"

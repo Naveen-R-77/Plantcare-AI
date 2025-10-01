@@ -3,6 +3,8 @@ import { detectPlantDisease, getPredictiveAnalysis } from "@/lib/ai-services"
 import { getDatabase } from "@/lib/mongodb"
 import jwt from "jsonwebtoken"
 
+export const runtime = 'nodejs'
+
 export async function POST(request: NextRequest) {
   try {
     const authHeader = request.headers.get("authorization")

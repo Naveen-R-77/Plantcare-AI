@@ -5,6 +5,8 @@ import { ObjectId } from "mongodb"
 import jwt from "jsonwebtoken"
 import { GoogleGenerativeAI } from "@google/generative-ai"
 
+export const runtime = 'nodejs'
+
 export async function POST(request: NextRequest) {
   try {
     const token = request.headers.get("authorization")?.replace("Bearer ", "")

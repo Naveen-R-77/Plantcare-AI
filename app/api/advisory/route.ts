@@ -3,6 +3,8 @@ import path from 'path';
 import fs from 'fs/promises';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+export const runtime = 'nodejs'
+
 // Define the structure of a row in the CSV data
 interface CropData {
   'Crop Category': string;
