@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Plant leaf icon for PlantCare AI -->
+  <rect width="32" height="32" rx="6" fill="#22c55e"/>
+  
+  <!-- Main leaf shape -->
+  <path d="M8 24C8 24 12 20 16 16C20 12 24 8 24 8C24 8 24 12 20 16C16 20 12 24 8 24Z" fill="#ffffff"/>
+  
+  <!-- Leaf vein -->
+  <path d="M10 22L22 10" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Secondary leaf -->
+  <path d="M6 26C6 26 9 23 12 20C15 17 18 14 18 14C18 14 17 17 14 20C11 23 8 26 6 26Z" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Small accent dot (representing AI/technology) -->
+  <circle cx="24" cy="8" r="2" fill="#fbbf24"/>
+</svg>
