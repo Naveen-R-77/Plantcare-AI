@@ -1,5 +1,7 @@
 # 🌱 PlantCare AI - Plant Disease Detection & Crop Advisory
 
+> **Status**: Production Ready - Deployed on Vercel
+
 AI-powered plant disease detection and crop advisory platform with multilingual support for farmers and gardeners worldwide.
 
 ## Features
